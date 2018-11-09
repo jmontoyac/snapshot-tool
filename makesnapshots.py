@@ -229,7 +229,7 @@ print '\n' + message + '\n'
 print result
 
 # SNS reporting
-sns = boto.connect_sns()
+#sns = boto.connect_sns()
 if sns_arn:
     if errmsg:
         sns.publish(sns_arn, 'Error in processing volumes: ' + errmsg, 'Error with AWS Snapshot')
